@@ -1,0 +1,13 @@
+#!/bin/bash
+#Script to check the used is executed by root or normal user
+#
+
+#if the user is root user , its UID is zero
+
+
+if [ $UID -eq 0 ]
+then
+        echo "Script executed by ROOT user!"
+else
+        echo "Script executed is not a Root User"
+fi

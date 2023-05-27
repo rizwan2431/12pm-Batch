@@ -1,0 +1,11 @@
+#!/bin/bash
+#Script to check the input value is single or double digitvalue
+
+
+read -p "Enter a number:" input_value
+
+if [[ $input_value -gt  9 && $input_value -lt 100 ]]; then
+        echo "Value Enter by the user is two digit number:"
+elif [[ $input_value -gt 0 && $input_value -lt 10 ]]; then
+        echo "Value Entered by the used is Single Digit Number:"
+fi
